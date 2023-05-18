@@ -13,6 +13,11 @@ html {
     width: 100px;
     height: 100px;
 }
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 /*-- Thypography */
 body {font-family: Inter;
     color: var(--color-body);
@@ -144,3 +149,62 @@ p {
     align-items: center;
     justify-content: center;
 }
+
+/* Buttons */
+.btn {
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    filter:brightness(150%);
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #ffff;
+}
+
+.btn--secondary:hover {
+    filter:brightness(150%);
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #ffff;
+}
+.btn--accent:hover {
+    filter:brightness(150%);
+}
+
+.btn--outline {
+    background: #ffff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #ffff;
+}
+
+.btn-block {
+    width: 100%;
+    display:inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
+ 
