@@ -103,7 +103,12 @@ p {
     padding-left: 0;
     color: var(--color-headings);
 }
-.list--inline .list_item {
+.list--inline .list__item {
     display: inline;
     margin-right: 5.7rem;
+}
+
+.list-tick .list__item {
+    padding-left: 1rem;
+    margin-bottom: 4rem;
 }
